@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>测试</title>
+  </head>
+  <body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+      <button id="btnPause">暂停</button> <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button> <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <style>
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+      }
+      #buttons {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 10px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }
+      #demo {
+        border: 1px solid red;
+        height: 40vh;
+        left: 0;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }
+      #demo2 {
+        display: none;
+      }
+      #html {
+        bottom: 0;
+        height: 60vh;
+        left: 0;
+        position: fixed;
+        width: 100%;
+      }
+    </style>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"><div class="circle"></div></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="mouth">
+          <div class="up">
+            <div class="left lip"></div>
+            <div class="lip right"></div>
+          </div>
+          <div class="down">
+            <div class="tongue1"><div class="tongue2"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="test.f68eed82.js"></script>
+  </body>
+</html>
